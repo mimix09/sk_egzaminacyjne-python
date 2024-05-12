@@ -1,18 +1,28 @@
+# *******************************************************
+# klasa: Notatka
+# opis: Działaniem klasy ma być zapisywanie oraz wyświetlanie informacji w opdowiedni sposób, znajduje się w niej konstruktor oraz dwie funkcje
+# pola: liczaNotatek - przechowuje liczby rzeczywiste które w tej funkcji przedstawiają liczbe notatek,
+#   id - przechowuje wartość od liczbyNotatek, liczby rzeczywiste, slyzy jako indentyfikator
+#   tytul - przechowuje ciąg znakow ktory przedstawia tytył notatki
+#   tresz - przechowuje ciag znakow krory przedstawia tresc notatki 
+# *******************************************************
+
+
 class Notatka:
     liczbaNotatek = 0
 
-    def __init__(self, title, content):
+    def __init__(self, tytul, tresc):
         Notatka.liczbaNotatek += 1
         self.id = Notatka.liczbaNotatek
-        self.title = title
-        self.content = content
+        self.tytul = tytul
+        self.tresc = tresc
 
     def display(self):
-        print("Tytul:", self.title)
-        print("Tresc", self.content)
+        print("Tytul:", self.tytul)
+        print("Tresc", self.tresc)
 
     def print_diagnostic(self):
-        print("ID:", self.id, "; Title:", self.title, "; Content:", self.content)
+        print("ID:", self.id, "; Tytul:", self.tytul, "; Tresc:", self.tresc)
 
 
 # Test tej aplikacji
