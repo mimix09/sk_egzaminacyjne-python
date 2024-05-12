@@ -27,8 +27,8 @@ class Notatka:
 
 # Test tej aplikacji
 def main():
-    note1 = Notatka("Shopping List", "1. Eggs\n2. Milk\n3. Bread")
-    note2 = Notatka("Meeting Agenda", "1. Discuss project timeline\n2. Assign tasks\n3. Set next meeting date")
+    note1 = Notatka("Lista Zakupow", "\n1. Jaja\n2. Mleko\n3. Chleb")
+    note2 = Notatka("Spotkanie", "\n1. isc na spotknie\n2. gadac z ludzmi\n3. wrocic z spotkania")
 
     print("Note 1:")
     note1.display()
