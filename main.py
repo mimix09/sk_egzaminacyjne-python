@@ -21,7 +21,7 @@ class Notatka:
         print("Tytul:", self.tytul)
         print("Tresc", self.tresc)
 
-    def print_diagnostic(self):
+    def display_diagnostic(self):
         print("ID:", self.id, "; Tytul:", self.tytul, "; Tresc:", self.tresc)
 
 
@@ -32,11 +32,11 @@ def main():
 
     print("Note 1:")
     note1.display()
-    note1.print_diagnostic()
+    note1.display_diagnostic()
 
     print("\nNote 2:")
     note2.display()
-    note2.print_diagnostic()
+    note2.display_diagnostic()
 
 
 if __name__ == "__main__":
