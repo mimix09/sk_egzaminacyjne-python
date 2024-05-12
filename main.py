@@ -1,18 +1,18 @@
 class Notatka:
-    note_counter = 0
+    liczbaNotatek = 0
 
     def __init__(self, title, content):
-        Note.note_counter += 1
-        self.__id = Note.note_counter
-        self.__title = title
-        self.__content = content
+        Notatka.liczbaNotatek += 1
+        self.id = Notatka.liczbaNotatek
+        self.title = title
+        self.content = content
 
     def display(self):
-        print("Title:", self.__title)
-        print("Content:", self.__content)
+        print("Tytul:", self.title)
+        print("Tresc", self.content)
 
     def print_diagnostic(self):
-        print("ID:", self.__id, "; Title:", self.__title, "; Content:", self.__content)
+        print("ID:", self.id, "; Title:", self.title, "; Content:", self.content)
 
 
 # Test tej aplikacji
